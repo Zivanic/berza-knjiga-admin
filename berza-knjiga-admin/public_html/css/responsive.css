@@ -8,8 +8,13 @@
         position: static;
         overflow: hidden;
     }
-    
-    
+    main .side-nav li span:nth-of-type(2n){
+        display: none;
+       
+    }
+    main .test{
+        transition: 0.2s ease;
+    }
 
 }
 

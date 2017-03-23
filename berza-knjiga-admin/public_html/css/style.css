@@ -1,6 +1,10 @@
 body *{
     font-family: 'Roboto', sans-serif;
 }
+body h1{
+    font-size: 24px;
+    color: #000;
+}
 
 /***********STILIZOVANJE HEDERA*/
 header{
@@ -44,6 +48,9 @@ main .side-nav{
     width: 80%;
     padding: 15px;
     display: none;
+    overflow-y: auto;
+    height: 100vh;
+    z-index: 100;
 }
 main .side-nav ul{
     border-bottom: 1px solid #555555;
@@ -53,37 +60,70 @@ main .side-nav ul{
 main .side-nav li{
     margin: 10px 0;
 }
-main .side-nav ul:first-of-type  li:first-of-type{
+main .side-nav ul:first-of-type {
     margin-top: 0;
     border-bottom: 1px solid #555555;
     padding-bottom: 5px;
 }
-main .side-nav ul:first-of-type li:first-of-type .fa{
+main .side-nav ul:first-of-type .fa{
     color: #9a9a9a;
     font-size: 30px;
 }
-main .side-nav ul:first-of-type  li:first-of-type:hover .fa{
+main .side-nav ul:first-of-type  li:hover .fa{
     color: #e8721a;
 }
 main .side-nav a{
     color: #999999;
-    font-size: 18px;
-
+    font-size: 14px;
 }
+main .side-nav li span:last-of-type{
+    vertical-align: top;
+    line-height: 30px;
+}
+
 main .side-nav li .fa{
     font-size: 25px;
     color: #555555;
     margin-right: 10px;
     width: 25px;
 }
-main .side-nav li:hover .fa{
+main .side-nav li:hover .fa,
+main .side-nav li.active .fa{
     color: #e8721a;
 }
 
-main .side-nav li:hover a{
+
+main .side-nav li:hover a,
+main .side-nav li.active a
+{
     color: #fff;
     text-decoration: none;
 }
 .buttonSlide{
     left: 80% !important;
+}
+.showNav{
+   display: inline-block !important;
+}
+/***************ARTICLES*/
+
+main .articles header{
+    background-color: #ececec;
+    margin: 0 -15px;
+    padding: 10px;
+    text-align: left;
+}
+main .articles header h1{
+    margin: 0 15px;
+    text-align: left;
+    display: inline-block;
+}
+main .articles header .fa{
+    vertical-align: top;
+    line-height: 30px;
+    color: #9a9a9a;
+    margin-right: 15px;
+}
+main .articles header .fa:hover{
+    color: #e8721a;
 }
