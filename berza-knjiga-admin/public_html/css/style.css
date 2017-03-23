@@ -1,10 +1,89 @@
-/*
-To change this license header, choose License Headers in Project Properties.
-To change this template file, choose Tools | Templates
-and open the template in the editor.
-*/
-/* 
-    Created on : Dec 6, 2016, 1:44:03 PM
-    Author     : frontend
-*/
+body *{
+    font-family: 'Roboto', sans-serif;
+}
 
+/***********STILIZOVANJE HEDERA*/
+header{
+    background-color: #333333;
+    text-align: center;
+}
+header a{
+    display: inline-block
+}
+header .logo{
+    width: 80px;
+}
+
+header .logo .img-responsive{
+    display: block;
+    margin: 0 auto;
+}
+header .btn-default{
+    position: absolute;
+    top: 10px;
+    left: 25px;
+    background: transparent;
+    border: transparent;
+}
+header .fa-bars{
+    color: #fff;
+}
+.btn:hover, 
+.btn:focus,
+.btn.focus {
+    background: transparent;
+    text-decoration: none;
+}
+
+/************SIDE NAV*/
+main .side-nav{
+    background-color: #222222;
+    position: fixed;
+    margin-left: -15px;
+    top: 0;
+    width: 80%;
+    padding: 15px;
+    display: none;
+}
+main .side-nav ul{
+    border-bottom: 1px solid #555555;
+    margin-bottom: 30px;
+    padding-bottom: 30px;
+}
+main .side-nav li{
+    margin: 10px 0;
+}
+main .side-nav ul:first-of-type  li:first-of-type{
+    margin-top: 0;
+    border-bottom: 1px solid #555555;
+    padding-bottom: 5px;
+}
+main .side-nav ul:first-of-type li:first-of-type .fa{
+    color: #9a9a9a;
+    font-size: 30px;
+}
+main .side-nav ul:first-of-type  li:first-of-type:hover .fa{
+    color: #e8721a;
+}
+main .side-nav a{
+    color: #999999;
+    font-size: 18px;
+
+}
+main .side-nav li .fa{
+    font-size: 25px;
+    color: #555555;
+    margin-right: 10px;
+    width: 25px;
+}
+main .side-nav li:hover .fa{
+    color: #e8721a;
+}
+
+main .side-nav li:hover a{
+    color: #fff;
+    text-decoration: none;
+}
+.buttonSlide{
+    left: 80% !important;
+}

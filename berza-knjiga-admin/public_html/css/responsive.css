@@ -1,18 +1,27 @@
 @media(min-width:768px){
+    .fa-sign-out{
+        display: none;
+    }
+    main .side-nav{
+        display: block;
+        width: 100%;
+        position: static;
+        overflow: hidden;
+    }
     
-
+    
 
 }
 
 @media(min-width:992px){
-    
+
 
 
 }
 
 
 @media(min-width:1200px){
-    
+
 
 
 }
