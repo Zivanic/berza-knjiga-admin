@@ -7,14 +7,14 @@ $(".showNav").click(function () {
         
     } else {
         
-            $(".toggle-nav").toggleClass('col-sm-1','col-sm-3');
+            $(".toggle-nav").toggleClass('col-sm-3');
             $(".articles").toggleClass('col-sm-9');
             $(".showNav").toggleClass('buttonSlide');
-            $(".side-nav li span:nth-of-type(2n)").toggleClass('showNav');
-            
+            $(".side-nav li span:nth-of-type(2n)").toggleClass('showInline');
+            $(".toggle-nav").toggleClass('showInline');
     }
 });
 $(".fa-search").click(function () {
-    $(".search").toggleClass('showNav');
+    $(".search").toggleClass('showInline');
 
 });

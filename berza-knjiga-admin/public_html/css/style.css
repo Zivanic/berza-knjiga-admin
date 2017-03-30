@@ -5,7 +5,9 @@ body h1{
     font-size: 24px;
     color: #000;
 }
-
+.showInline{
+    display: inline-block !important;
+}
 /***********STILIZOVANJE HEDERA*/
 header{
     background-color: #333333;
@@ -16,6 +18,9 @@ header a{
 }
 header .logo{
     width: 80px;
+}
+header .logo-big{
+    display: none;
 }
 
 header .logo .img-responsive{
@@ -40,6 +45,7 @@ header .fa-bars{
 }
 
 /************SIDE NAV*/
+
 main .side-nav{
     background-color: #222222;
     position: fixed;
@@ -56,6 +62,12 @@ main .side-nav ul{
     border-bottom: 1px solid #555555;
     margin-bottom: 30px;
     padding-bottom: 30px;
+}
+main .side-nav ul:last-of-type{
+    border-bottom: 1px solid transparent;
+}
+main .side-nav ul:nth-of-type(4n) li:first-of-type{
+    list-style: none;
 }
 main .side-nav li{
     margin: 10px 0;
@@ -102,9 +114,7 @@ main .side-nav li.active a
 .buttonSlide{
     left: 80% !important;
 }
-.showNav{
-    display: inline-block !important;
-}
+
 /***************ARTICLES*/
 
 main .articles header{
@@ -130,6 +140,7 @@ main .articles header .fa:hover{
 main .articles .search{
     display: none;
     margin-right: 15px;
+    
 }
 main .articles .search .form-group {
     display: inline-block;
@@ -191,6 +202,7 @@ main .articles .search input[type="text"]{
 }
 main .articles .new-article{
     margin-top: 20px;
+    position: relative;
 }
 main .articles .new-article p{
     font-weight: bold;
@@ -205,6 +217,12 @@ main .articles .new-article input[type="text"]{
 }
 main .articles .new-article form{
     display: inline-block;
+}
+main .articles .new-article .fa-cogs,
+main .articles .new-article .fa-search{
+    position: absolute;
+    top: 0;
+    right: 0;
 }
 main .articles .books{
     margin: 15px 0;
@@ -325,4 +343,13 @@ main .articles .book p u{
 main .articles .book p:first-of-type{
     font-weight: bold;
     font-size: 16px;
+}
+
+.side-button{
+    width: 15px;
+    height: 50px;
+    background: red;
+    position: absolute;
+    top: 300px;
+    left: 0;
 }

@@ -12,6 +12,13 @@
 }
 
 @media(min-width:768px){
+    main .toggle-nav{
+        display: none;
+    }
+    header .logo-big{
+        display: none;
+        width: auto;
+    }
     main .articles .search input[type="text"]{
         display: inline-block;
         width: 120px;
