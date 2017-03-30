@@ -7,10 +7,14 @@ $(".showNav").click(function () {
         
     } else {
         
-            $(".test").toggleClass('col-sm-1','col-sm-3');
+            $(".toggle-nav").toggleClass('col-sm-1','col-sm-3');
             $(".articles").toggleClass('col-sm-9');
             $(".showNav").toggleClass('buttonSlide');
             $(".side-nav li span:nth-of-type(2n)").toggleClass('showNav');
             
     }
+});
+$(".fa-search").click(function () {
+    $(".search").toggleClass('showNav');
+
 });

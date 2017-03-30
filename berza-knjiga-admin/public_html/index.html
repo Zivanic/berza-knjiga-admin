@@ -28,10 +28,11 @@
             <a href="#"><figure class="logo"><img class="img-responsive" src="img/logo.jpg" alt=""/></figure></a>
         </header>
         <main>
-            <section>
-                <div class="container-fluid">
+
+            <div class="container-fluid">
+                <section>
                     <div class="row">
-                        <div class="col-sm-1 col-sm-3 test">
+                        <div class="col-sm-1 col-sm-3 toggle-nav">
                             <article class="side-nav">
                                 <ul class="list-unstyled">
                                     <li><a href="#"><span class="fa fa-user"></span><span>username</span></a><a href="#"><span class="fa fa-sign-out pull-right"></span></a></li>
@@ -60,14 +61,391 @@
                         </div>
                         <div class="col-sm-11 articles">
                             <header>
-                                <h1>Artikli</h1>
-                                <a class="pull-right" href="#"><span class="search fa fa-search"></span></a>
+                                <div class="heaeder-top clearfix">
+                                    <h1>Artikli</h1>
+                                    <a class="pull-right" href="#"><span class="fa fa-search"></span></a>
+                                    <div class="search pull-right">
+                                        <form>
+                                            <input type="text" name="trazi" placeholder="Traži">
+                                            <select name="store">
+                                                <option value="">Prodavnice</option>
+                                                <option value=""></option>
+                                                <option value=""></option>
+                                                <option value=""></option>
+                                            </select>
+                                            <select name="category">
+                                                <option value="">Kategorija</option>
+                                                <option value=""></option>
+                                                <option value=""></option>
+                                                <option value=""></option>
+                                            </select>
+                                            <select name="min-price">
+                                                <option value="">Cena od</option>
+                                                <option value=""></option>
+                                                <option value=""></option>
+                                                <option value=""></option>
+                                            </select>
+                                            <select name="max-price">
+                                                <option value="">Cena do</option>
+                                                <option value=""></option>
+                                                <option value=""></option>
+                                                <option value=""></option>
+                                            </select>
+                                            <div class="form-group">
+                                                <div><input type="checkbox" name="promo" value="" /><p>Promo</p></div>
+                                                <div><input type="checkbox" name="promo" value="" /><p>%</p></div>
+                                                <div><input type="checkbox" name="promo" value="" /><p>Novo</p></div>
+                                                <div><input type="checkbox" name="promo" value="" /><p>Izbor(0)</p></div>
+                                                <div><input type="checkbox" name="promo" value="" /><p>Lager</p></div>
+                                            </div>
+                                            <button type="submit" class="btn-default">Traži</button>
+                                        </form>
+                                    </div>
+                                </div>
+                                <div class="new-article">
+                                    <p>Nivelacija cena</p> 
+                                    <form>
+                                        <div class="form-group">
+                                            <input type="checkbox" name="promo" value="" />sve
+                                            <input type="checkbox" name="promo" value="" />+
+                                            <input type="text" name="trazi" placeholder="Cena">
+                                            <input type="text" name="trazi" placeholder="%">
+                                            <button type="submit" class="btn-default">IZVRŠI</button>
+                                        </div>
+                                    </form>
+                                    <a class="pull-right" href="#"><span class="fa fa-cogs"></span></a>
+                                </div>
                             </header>
+                            <article class="books text-center clearfix">
+                                <p class="text-uppercase">broj artikala: <u>812</u></p>
+                                <ul class="pagination ">
+                                    <li><a href="#">1</a></li>
+                                    <li><a href="#">2</a></li>
+                                    <li><a href="#">3</a></li>
+                                    <li class="active"><a href="#">4</a></li>
+                                    <li><a href="#">5</a></li>
+                                    <li><a href="#">...</a></li>
+                                    <li><a href="#">51</a></li>
+                                    <li><a href="#">&GT;</a></li>
+                                </ul>
+                                <select name="select-by-price">
+                                    <option value="">Ceni (od niže ka višoj)</option>
+                                    <option value="">Ceni (od više ka nižoj)</option>
+                                </select>
+                            </article>
+                            <article>
+                                <div class="select-book clearfix">
+                                    <input type="checkbox" name="select" value="" />
+                                    <a href="#"><span class="fa fa-check-circle"></span></a>
+                                    <a href="#"><span class="fa fa-cog"></span></a>
+                                    <a href="#"><span class="fa fa-picture-o"></span></a>
+                                    <div class="book clearfix">
+                                        <figure class="text-center">
+                                            <a href=""><img class="img-responsive" src="img/books/berza admin artikli.jpg" alt=""/></a>
+                                        </figure>
+                                        <p>NEMA KARTA SRBIJA - VIII RAZRED - Školski program</p>
+                                        <p><u>86,00 RSD </u>86,00</p>
+                                        <p>
+                                            BerzaKnjiga<br>
+                                            Intersistem kartografija
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="select-book clearfix">
+                                    <input type="checkbox" name="select" value="" />
+                                    <a class="active" href="#"><span class="fa fa-check-circle"></span></a>
+                                    <a href="#"><span class="fa fa-cog"></span></a>
+                                    <a href="#"><span class="fa fa-picture-o"></span></a>
+                                    <div class="book clearfix">
+                                        <figure class="text-center">
+                                            <a href=""><img class="img-responsive" src="img/books/berza admin artikli.jpg" alt=""/></a>
+                                        </figure>
+                                        <p>NEMA KARTA SRBIJA - VIII RAZRED - Školski program</p>
+                                        <p><u>86,00 RSD </u>86,00</p>
+                                        <p>
+                                            BerzaKnjiga<br>
+                                            Intersistem kartografija
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="select-book clearfix">
+                                    <input type="checkbox" name="select" value="" />
+                                    <a href="#"><span class="fa fa-check-circle"></span></a>
+                                    <a href="#"><span class="fa fa-cog"></span></a>
+                                    <a href="#"><span class="fa fa-picture-o"></span></a>
+                                    <div class="book clearfix">
+                                        <figure class="text-center">
+                                            <a href=""><img class="img-responsive" src="img/books/berza admin artikli.jpg" alt=""/></a>
+                                        </figure>
+                                        <p>NEMA KARTA SRBIJA - VIII RAZRED - Školski program</p>
+                                        <p><u>86,00 RSD </u>86,00</p>
+                                        <p>
+                                            BerzaKnjiga<br>
+                                            Intersistem kartografija
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="select-book clearfix">
+                                    <input type="checkbox" name="select" value="" />
+                                    <a class="active" href="#"><span class="fa fa-check-circle"></span></a>
+                                    <a href="#"><span class="fa fa-cog"></span></a>
+                                    <a href="#"><span class="fa fa-picture-o"></span></a>
+                                    <div class="book clearfix">
+                                        <figure class="text-center">
+                                            <a href=""><img class="img-responsive" src="img/books/berza admin artikli.jpg" alt=""/></a>
+                                        </figure>
+                                        <p>NEMA KARTA SRBIJA - VIII RAZRED - Školski program</p>
+                                        <p><u>86,00 RSD </u>86,00</p>
+                                        <p>
+                                            BerzaKnjiga<br>
+                                            Intersistem kartografija
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="select-book clearfix">
+                                    <input type="checkbox" name="select" value="" />
+                                    <a class="active" href="#"><span class="fa fa-check-circle"></span></a>
+                                    <a href="#"><span class="fa fa-cog"></span></a>
+                                    <a href="#"><span class="fa fa-picture-o"></span></a>
+                                    <div class="book clearfix">
+                                        <figure class="text-center">
+                                            <a href=""><img class="img-responsive" src="img/books/berza admin artikli.jpg" alt=""/></a>
+                                        </figure>
+                                        <p>NEMA KARTA SRBIJA - VIII RAZRED - Školski program</p>
+                                        <p><u>86,00 RSD </u>86,00</p>
+                                        <p>
+                                            BerzaKnjiga<br>
+                                            Intersistem kartografija
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="select-book clearfix">
+                                    <input type="checkbox" name="select" value="" />
+                                    <a href="#"><span class="fa fa-check-circle"></span></a>
+                                    <a href="#"><span class="fa fa-cog"></span></a>
+                                    <a href="#"><span class="fa fa-picture-o"></span></a>
+                                    <div class="book clearfix">
+                                        <figure class="text-center">
+                                            <a href=""><img class="img-responsive" src="img/books/berza admin artikli.jpg" alt=""/></a>
+                                        </figure>
+                                        <p>NEMA KARTA SRBIJA - VIII RAZRED - Školski program</p>
+                                        <p><u>86,00 RSD </u>86,00</p>
+                                        <p>
+                                            BerzaKnjiga<br>
+                                            Intersistem kartografija
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="select-book clearfix">
+                                    <input type="checkbox" name="select" value="" />
+                                    <a class="active" href="#"><span class="fa fa-check-circle"></span></a>
+                                    <a href="#"><span class="fa fa-cog"></span></a>
+                                    <a href="#"><span class="fa fa-picture-o"></span></a>
+                                    <div class="book clearfix">
+                                        <figure class="text-center">
+                                            <a href=""><img class="img-responsive" src="img/books/berza admin artikli.jpg" alt=""/></a>
+                                        </figure>
+                                        <p>NEMA KARTA SRBIJA - VIII RAZRED - Školski program</p>
+                                        <p><u>86,00 RSD </u>86,00</p>
+                                        <p>
+                                            BerzaKnjiga<br>
+                                            Intersistem kartografija
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="select-book clearfix">
+                                    <input type="checkbox" name="select" value="" />
+                                    <a href="#"><span class="fa fa-check-circle"></span></a>
+                                    <a href="#"><span class="fa fa-cog"></span></a>
+                                    <a href="#"><span class="fa fa-picture-o"></span></a>
+                                    <div class="book clearfix">
+                                        <figure class="text-center">
+                                            <a href=""><img class="img-responsive" src="img/books/berza admin artikli.jpg" alt=""/></a>
+                                        </figure>
+                                        <p>NEMA KARTA SRBIJA - VIII RAZRED - Školski program</p>
+                                        <p><u>86,00 RSD </u>86,00</p>
+                                        <p>
+                                            BerzaKnjiga<br>
+                                            Intersistem kartografija
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="select-book clearfix">
+                                    <input type="checkbox" name="select" value="" />
+                                    <a class="active" href="#"><span class="fa fa-check-circle"></span></a>
+                                    <a href="#"><span class="fa fa-cog"></span></a>
+                                    <a href="#"><span class="fa fa-picture-o"></span></a>
+                                    <div class="book clearfix">
+                                        <figure class="text-center">
+                                            <a href=""><img class="img-responsive" src="img/books/berza admin artikli.jpg" alt=""/></a>
+                                        </figure>
+                                        <p>NEMA KARTA SRBIJA - VIII RAZRED - Školski program</p>
+                                        <p><u>86,00 RSD </u>86,00</p>
+                                        <p>
+                                            BerzaKnjiga<br>
+                                            Intersistem kartografija
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="select-book clearfix">
+                                    <input type="checkbox" name="select" value="" />
+                                    <a class="active" href="#"><span class="fa fa-check-circle"></span></a>
+                                    <a href="#"><span class="fa fa-cog"></span></a>
+                                    <a href="#"><span class="fa fa-picture-o"></span></a>
+                                    <div class="book clearfix">
+                                        <figure class="text-center">
+                                            <a href=""><img class="img-responsive" src="img/books/berza admin artikli.jpg" alt=""/></a>
+                                        </figure>
+                                        <p>NEMA KARTA SRBIJA - VIII RAZRED - Školski program</p>
+                                        <p><u>86,00 RSD </u>86,00</p>
+                                        <p>
+                                            BerzaKnjiga<br>
+                                            Intersistem kartografija
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="select-book clearfix">
+                                    <input type="checkbox" name="select" value="" />
+                                    <a href="#"><span class="fa fa-check-circle"></span></a>
+                                    <a href="#"><span class="fa fa-cog"></span></a>
+                                    <a href="#"><span class="fa fa-picture-o"></span></a>
+                                    <div class="book clearfix">
+                                        <figure class="text-center">
+                                            <a href=""><img class="img-responsive" src="img/books/berza admin artikli.jpg" alt=""/></a>
+                                        </figure>
+                                        <p>NEMA KARTA SRBIJA - VIII RAZRED - Školski program</p>
+                                        <p><u>86,00 RSD </u>86,00</p>
+                                        <p>
+                                            BerzaKnjiga<br>
+                                            Intersistem kartografija
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="select-book clearfix">
+                                    <input type="checkbox" name="select" value="" />
+                                    <a class="active" href="#"><span class="fa fa-check-circle"></span></a>
+                                    <a href="#"><span class="fa fa-cog"></span></a>
+                                    <a href="#"><span class="fa fa-picture-o"></span></a>
+                                    <div class="book clearfix">
+                                        <figure class="text-center">
+                                            <a href=""><img class="img-responsive" src="img/books/berza admin artikli.jpg" alt=""/></a>
+                                        </figure>
+                                        <p>NEMA KARTA SRBIJA - VIII RAZRED - Školski program</p>
+                                        <p><u>86,00 RSD </u>86,00</p>
+                                        <p>
+                                            BerzaKnjiga<br>
+                                            Intersistem kartografija
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="select-book clearfix">
+                                    <input type="checkbox" name="select" value="" />
+                                    <a href="#"><span class="fa fa-check-circle"></span></a>
+                                    <a href="#"><span class="fa fa-cog"></span></a>
+                                    <a href="#"><span class="fa fa-picture-o"></span></a>
+                                    <div class="book clearfix">
+                                        <figure class="text-center">
+                                            <a href=""><img class="img-responsive" src="img/books/berza admin artikli.jpg" alt=""/></a>
+                                        </figure>
+                                        <p>NEMA KARTA SRBIJA - VIII RAZRED - Školski program</p>
+                                        <p><u>86,00 RSD </u>86,00</p>
+                                        <p>
+                                            BerzaKnjiga<br>
+                                            Intersistem kartografija
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="select-book clearfix">
+                                    <input type="checkbox" name="select" value="" />
+                                    <a class="active" href="#"><span class="fa fa-check-circle"></span></a>
+                                    <a href="#"><span class="fa fa-cog"></span></a>
+                                    <a href="#"><span class="fa fa-picture-o"></span></a>
+                                    <div class="book clearfix">
+                                        <figure class="text-center">
+                                            <a href=""><img class="img-responsive" src="img/books/berza admin artikli.jpg" alt=""/></a>
+                                        </figure>
+                                        <p>NEMA KARTA SRBIJA - VIII RAZRED - Školski program</p>
+                                        <p><u>86,00 RSD </u>86,00</p>
+                                        <p>
+                                            BerzaKnjiga<br>
+                                            Intersistem kartografija
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="select-book clearfix">
+                                    <input type="checkbox" name="select" value="" />
+                                    <a class="active" href="#"><span class="fa fa-check-circle"></span></a>
+                                    <a href="#"><span class="fa fa-cog"></span></a>
+                                    <a href="#"><span class="fa fa-picture-o"></span></a>
+                                    <div class="book clearfix">
+                                        <figure class="text-center">
+                                            <a href=""><img class="img-responsive" src="img/books/berza admin artikli.jpg" alt=""/></a>
+                                        </figure>
+                                        <p>NEMA KARTA SRBIJA - VIII RAZRED - Školski program</p>
+                                        <p><u>86,00 RSD </u>86,00</p>
+                                        <p>
+                                            BerzaKnjiga<br>
+                                            Intersistem kartografija
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="select-book clearfix">
+                                    <input type="checkbox" name="select" value="" />
+                                    <a href="#"><span class="fa fa-check-circle"></span></a>
+                                    <a href="#"><span class="fa fa-cog"></span></a>
+                                    <a href="#"><span class="fa fa-picture-o"></span></a>
+                                    <div class="book clearfix">
+                                        <figure class="text-center">
+                                            <a href=""><img class="img-responsive" src="img/books/berza admin artikli.jpg" alt=""/></a>
+                                        </figure>
+                                        <p>NEMA KARTA SRBIJA - VIII RAZRED - Školski program</p>
+                                        <p><u>86,00 RSD </u>86,00</p>
+                                        <p>
+                                            BerzaKnjiga<br>
+                                            Intersistem kartografija
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="select-book clearfix">
+                                    <input type="checkbox" name="select" value="" />
+                                    <a class="active" href="#"><span class="fa fa-check-circle"></span></a>
+                                    <a href="#"><span class="fa fa-cog"></span></a>
+                                    <a href="#"><span class="fa fa-picture-o"></span></a>
+                                    <div class="book clearfix">
+                                        <figure class="text-center">
+                                            <a href=""><img class="img-responsive" src="img/books/berza admin artikli.jpg" alt=""/></a>
+                                        </figure>
+                                        <p>NEMA KARTA SRBIJA - VIII RAZRED - Školski program</p>
+                                        <p><u>86,00 RSD </u>86,00</p>
+                                        <p>
+                                            BerzaKnjiga<br>
+                                            Intersistem kartografija
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="select-book clearfix">
+                                    <input type="checkbox" name="select" value="" />
+                                    <a href="#"><span class="fa fa-check-circle"></span></a>
+                                    <a href="#"><span class="fa fa-cog"></span></a>
+                                    <a href="#"><span class="fa fa-picture-o"></span></a>
+                                    <div class="book clearfix">
+                                        <figure class="text-center">
+                                            <a href=""><img class="img-responsive" src="img/books/berza admin artikli.jpg" alt=""/></a>
+                                        </figure>
+                                        <p>NEMA KARTA SRBIJA - VIII RAZRED - Školski program</p>
+                                        <p><u>86,00 RSD </u>86,00</p>
+                                        <p>
+                                            BerzaKnjiga<br>
+                                            Intersistem kartografija
+                                        </p>
+                                    </div>
+                                </div>
+                                
+                            </article>
                         </div>
                     </div>
-                </div>
-
-            </section>
+                </section>
+            </div>
 
         </main>
 

@@ -103,7 +103,7 @@ main .side-nav li.active a
     left: 80% !important;
 }
 .showNav{
-   display: inline-block !important;
+    display: inline-block !important;
 }
 /***************ARTICLES*/
 
@@ -126,4 +126,203 @@ main .articles header .fa{
 }
 main .articles header .fa:hover{
     color: #e8721a;
+}
+main .articles .search{
+    display: none;
+    margin-right: 15px;
+}
+main .articles .search .form-group {
+    display: inline-block;
+    vertical-align: top;
+    margin-bottom: 0;
+}
+main .articles .search .form-group div{
+    display: inline-block;
+    text-align: center;
+    margin: 5px;
+}
+main .articles .search .form-group p{
+    font-size: 12px;
+    line-height: 10px;
+    margin: 0;
+
+}
+main .articles .search input[type="checkbox"] {
+    margin: 0px;
+}
+main .articles .btn-default{
+    position: static;
+    color: #fff;
+    background-color: #e8721a;
+    padding: 5px 25px;
+    border-radius: 3px;
+    margin-left: 5px;
+    transition: 0.2s;
+}
+main .articles .btn-default:hover{
+    box-shadow: 2px 2px 2px 1px #888888;
+}
+main .heaeder-top{
+    border-bottom: 1px solid #dddddd;
+    padding-bottom: 30px;
+}
+
+main .search select{
+    border-color: transparent;
+    border-radius: 3px;
+    -webkit-appearance: none; 
+    -moz-appearance: none;
+    appearance: none; 
+    background-image: url('down.jpg'); 
+    background-repeat: no-repeat;
+    background-position-x: 75px;
+    margin: 5px 5px;
+    width: 90px;
+    box-shadow: 2px 2px 2px 1px rgb(221, 221, 221);
+    padding: 3px;
+}
+main .articles .search input[type="text"]{
+    border-color: transparent;
+    border-radius: 3px;
+    padding: 3px 5px;
+    margin-left: 5px;
+    width: 80%;
+    display: block;
+}
+main .articles .new-article{
+    margin-top: 20px;
+}
+main .articles .new-article p{
+    font-weight: bold;
+    display: inline-block;
+}
+main .articles .new-article input[type="text"]{
+    border-color: transparent;
+    border-radius: 3px;
+    padding: 3px 5px;
+    margin-left: 5px;
+    max-width: 60px;
+}
+main .articles .new-article form{
+    display: inline-block;
+}
+main .articles .books{
+    margin: 15px 0;
+    border-bottom: 1px solid #dddddd;
+    padding-bottom: 15px;
+}
+main .articles .books p{
+    display: block;
+    font-size: 13px;
+    padding-top: 10px;
+}
+main .articles .books p u{
+    text-decoration: none;
+    font-weight: bold;
+}
+.pagination {
+    display: inline-block;
+    margin: 0px;
+}
+
+.pagination > li > a,
+.pagination > li > span {
+    position: relative;
+    float: left;
+    padding: 2px 7px;
+    line-height: 1.42857143;
+    color: #8c8c8c;
+    text-decoration: none;
+    background-color: #fff;
+    border: 1px solid transparent;
+    border-top-color: rgb(221, 221, 221);
+    border-right-color: rgb(221, 221, 221);
+    border-bottom-color: rgb(221, 221, 221);
+    border-left-color: rgb(221, 221, 221);
+    margin-right: 5px;
+    box-shadow: 1px 1px 1px rgb(221, 221, 221);
+    border-radius: 2px;
+}
+.pagination > li > a:focus,
+.pagination > li > a:hover,
+.pagination > .active > a{
+    background-color: #e8721a;
+    color: #fff;
+    border: 1px solid transparent;
+}
+.pagination > .active > a:hover{
+    background-color: #e8721a;
+    border: 1px solid transparent;
+}
+.pagination li:nth-of-type(6n) a{
+    border: 1px solid transparent;
+    box-shadow: none;
+}
+.pagination li:last-of-type a{
+    color: #e8721a;
+    font-weight: bolder;
+}
+.pagination li:last-of-type a:hover{
+    color: #fff;
+}
+main .articles .books select{
+    border-color: transparent;
+    border-radius: 3px;
+    -webkit-appearance: none; 
+    -moz-appearance: none;
+    appearance: none; 
+    background-image: url('down.jpg'); 
+    background-repeat: no-repeat;
+    background-position-x: 150px;
+    margin: 5px 5px;
+    width: 170px;
+    box-shadow: 2px 2px 2px 1px rgb(221, 221, 221);
+    padding: 3px;
+    vertical-align: bottom;
+}
+
+main .articles .select-book {
+    background-color: #ececec;
+    border: 1px solid #ececec;
+    width: 100%;
+    margin-bottom: 10px;
+}
+main .articles .select-book input[type='checkbox']{
+    margin-left: 10px;
+}
+main .articles .select-book a{
+    float: right;
+    color: #bbbbbb;
+    margin-right: 10px;
+    margin-bottom: 15px;
+}
+main .articles .select-book a:hover,
+main .articles .select-book a.active{
+    color: #e8721a;
+}
+main .articles .book{
+    background: #fff;
+    padding: 15px 10px;
+}
+main .articles .book figure{
+    margin-bottom: 15px;
+}
+main .articles .book figure .img-responsive{
+    display: inline-block;
+}
+main .articles .book a{
+    float: none;
+}
+main .articles .book p{
+    text-align: center;
+}
+main .articles .book p u{
+    color: #e8721a;
+    font-weight: bold;
+    font-size: 16px;
+    text-decoration: none;
+}
+main .articles .book p:first-of-type{
+    font-weight: bold;
+    font-size: 16px;
 }
