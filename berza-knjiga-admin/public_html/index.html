@@ -10,6 +10,7 @@
         <!-- Bootstrap -->
         <link href="css/bootstrap.min.css" rel="stylesheet">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link href="css/hover-min.css" rel="stylesheet" type="text/css"/>
         <link href="css/style.css" rel="stylesheet" type="text/css"/>
         <link href="css/responsive.css" rel="stylesheet" type="text/css"/>
         <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700" rel="stylesheet">
@@ -26,7 +27,6 @@
                 <span class="fa fa-bars"></span>
             </button>
             <a href="#"><figure class="logo"><img class="img-responsive" src="img/logo.jpg" alt=""/></figure></a>
-            <a class="pull-left" href="#"><figure class="logo-big"><img class="img-responsive" src="img/logo.jpg" alt=""/></figure></a>
         </header>
         <main>
             <div class="container-fluid">
@@ -53,7 +53,7 @@
                                     <li><a href="#"><span class="fa fa-address-card"></span><span>Novčanik</span></a></li>
                                     <li><a href="#"><span class="fa fa-comment-o"></span><span>Komentari</span></a></li>
                                 </ul>
-                                <ul>
+                                <ul class="cms">
                                     <li><a href="#">CMS</a></li>
                                     <li><a href="#">Slajder</a></li>
                                     <li><a href="#">Sajt sekcije</a></li>
@@ -110,19 +110,23 @@
                                         </form>
                                     </div>
                                 </div>
-                                <div class="new-article">
-                                    <a href="#" class="text-uppercase">novi artikli</a>
-                                    <a href="#"><span class="fa fa-upload"></span></a>
-                                    <p>Nivelacija cena</p> 
-                                    <form>
-                                        <div class="form-group">
-                                            <input type="checkbox" name="promo" value="" />sve
-                                            <input type="checkbox" name="promo" value="" />+
-                                            <input type="text" name="trazi" placeholder="Cena">
-                                            <input type="text" name="trazi" placeholder="%">
-                                            <button type="submit" class="btn-default">IZVRŠI</button>
-                                        </div>
-                                    </form>
+                                <div class="new-article clearfix">
+                                    <div class="upload">
+                                        <a href="#" class="text-uppercase hvr-grow">novi artikli</a>
+                                        <a href="#" class="hvr-grow"><span class="fa fa-upload"></span></a>
+                                    </div>
+                                    <div class="pull-right nivelacija">
+                                        <p>Nivelacija cena</p> 
+                                        <form>
+                                            <div class="form-group">
+                                                <input type="checkbox" name="promo" value="" />sve
+                                                <input type="checkbox" name="promo" value="" />+
+                                                <input type="text" name="trazi" placeholder="Cena">
+                                                <input type="text" name="trazi" placeholder="%">
+                                                <button type="submit" class="btn-default">IZVRŠI</button>
+                                            </div>
+                                        </form>
+                                    </div>
                                     <a href="#"><span class="fa fa-cogs"></span></a>
                                 </div>
                             </header>
@@ -453,9 +457,10 @@
 
                             </article>
                             <a class="side-button">
-                                <figure>
-                                    
-                                </figure>
+                                <span class="fa fa-chevron-right"></span>
+                                <span class="fa fa-chevron-right"></span>
+                                <span class="fa fa-chevron-right"></span>
+                                <span class="fa fa-chevron-right"></span>
                             </a>
                         </div>
                     </div>
@@ -466,7 +471,7 @@
 
 
 
-
+        
 
 
         <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->

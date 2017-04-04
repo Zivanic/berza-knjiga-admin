@@ -19,10 +19,6 @@ header a{
 header .logo{
     width: 80px;
 }
-header .logo-big{
-    display: none;
-}
-
 header .logo .img-responsive{
     display: block;
     margin: 0 auto;
@@ -33,6 +29,7 @@ header .btn-default{
     left: 25px;
     background: transparent;
     border: transparent;
+    transition: 0.5s ease;
 }
 header .fa-bars{
     color: #fff;
@@ -47,16 +44,19 @@ header .fa-bars{
 /************SIDE NAV*/
 
 main .side-nav{
-    background-color: #222222;
+    background-color: #333333;
     position: fixed;
-    margin-left: -15px;
     top: 0;
+    left: -700px;
     width: 80%;
     padding: 15px;
-    display: none;
     overflow-y: auto;
     height: 100vh;
     z-index: 100;
+    transition: 0.5s ease;
+}
+.showSideNav{
+    left: 0px!important;
 }
 main .side-nav ul{
     border-bottom: 1px solid #555555;
@@ -68,10 +68,12 @@ main .side-nav ul:last-of-type{
 }
 main .side-nav ul:nth-of-type(4n) li:first-of-type{
     list-style: none;
+    margin-left: -15px;
 }
 main .side-nav li{
     margin: 10px 0;
 }
+
 main .side-nav ul:first-of-type {
     margin-top: 0;
     border-bottom: 1px solid #555555;
@@ -103,7 +105,9 @@ main .side-nav li:hover .fa,
 main .side-nav li.active .fa{
     color: #e8721a;
 }
-
+main .side-nav .cms{
+    list-style-image: url('li-style.jpg');
+}
 
 main .side-nav li:hover a,
 main .side-nav li.active a
@@ -114,7 +118,19 @@ main .side-nav li.active a
 .buttonSlide{
     left: 80% !important;
 }
-
+.side-button{
+    width: 15px;
+    background: #333333;
+    position: fixed;
+    top: 300px;
+    left: 0;
+    display: none;
+    border: 1px solid #333333;
+    border-radius: 3px;
+ }
+.side-button .fa{
+    color: #e8721a;
+}
 /***************ARTICLES*/
 
 main .articles header{
@@ -124,23 +140,24 @@ main .articles header{
     text-align: left;
 }
 main .articles header h1{
-    margin: 0 15px;
+    margin: 10px 15px;
     text-align: left;
     display: inline-block;
 }
-main .articles header .fa{
-    vertical-align: top;
-    line-height: 30px;
+main .articles header .fa-search{
     color: #9a9a9a;
     margin-right: 15px;
+    position: absolute;
+    top: 20px;
+    right: 0;
 }
 main .articles header .fa:hover{
     color: #e8721a;
 }
 main .articles .search{
     display: none;
-    margin-right: 15px;
-    
+    margin-right: 50px;
+
 }
 main .articles .search .form-group {
     display: inline-block;
@@ -204,9 +221,40 @@ main .articles .new-article{
     margin-top: 20px;
     position: relative;
 }
+.articles .new-article .upload{
+    margin-bottom: 15px;
+}
+.articles .new-article .upload a{
+    padding: 10px 15px;
+    background-color: #3eadc1;
+    color: #fff;
+    border-radius: 3px;
+    font-size: 12px;
+    line-height: 12px;
+    margin-left: 5px;
+}
+.articles .new-article .upload a .fa{
+    color: #fff;
+    font-size: 14px;
+    line-height: 12px;
+    margin: 0 auto;
+}
+.articles .new-article .upload a:hover{
+    text-decoration: none;
+}
+main .articles .new-article .nivelacija{
+    margin-right: 50px;
+    display: none;
+}
 main .articles .new-article p{
     font-weight: bold;
     display: inline-block;
+    margin-left: 5px;
+}
+main .articles .new-article input[type="checkbox"]{
+    margin-left: 15px;
+    margin-right: 5px;
+    vertical-align: text-top;
 }
 main .articles .new-article input[type="text"]{
     border-color: transparent;
@@ -218,11 +266,13 @@ main .articles .new-article input[type="text"]{
 main .articles .new-article form{
     display: inline-block;
 }
-main .articles .new-article .fa-cogs,
-main .articles .new-article .fa-search{
+main .articles .new-article .fa-cogs{
+    color: #9a9a9a;
+    margin-right: 15px;
     position: absolute;
-    top: 0;
     right: 0;
+    top: 10px;
+    margin-right: 5px;
 }
 main .articles .books{
     margin: 15px 0;
@@ -345,11 +395,3 @@ main .articles .book p:first-of-type{
     font-size: 16px;
 }
 
-.side-button{
-    width: 15px;
-    height: 50px;
-    background: red;
-    position: absolute;
-    top: 300px;
-    left: 0;
-}
