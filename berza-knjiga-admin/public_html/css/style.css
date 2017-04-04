@@ -132,7 +132,9 @@ main .side-nav li.active a
     color: #e8721a;
 }
 /***************ARTICLES*/
-
+main .articles{
+    background: #fff;
+}
 main .articles header{
     background-color: #ececec;
     margin: 0 -15px;
@@ -395,3 +397,26 @@ main .articles .book p:first-of-type{
     font-size: 16px;
 }
 
+/*********************STRANA NARUDZBINE****************/
+.articles.orders .heaeder-top{
+    border-bottom: none;
+    padding-bottom: 15px;
+    padding-bottom: 0;
+}
+.articles.orders .heaeder-top .search{
+    display: none;
+}
+.articles.orders .search .date{
+    display: inline-block;
+    margin-right: 15px;
+    margin-left: 5px;
+}
+.articles.orders .search .date p{
+    display: inline-block;
+    color: #888888;
+}
+.articles.orders .search .date input{
+    display: inline-block;
+    width: 40%;
+    max-width: 120px;
+}

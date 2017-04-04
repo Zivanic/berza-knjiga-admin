@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+        <title>Berza knjiga</title>
+
+        <!-- Bootstrap -->
+        <link href="css/bootstrap.min.css" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link href="css/hover-min.css" rel="stylesheet" type="text/css"/>
+        <link href="css/style.css" rel="stylesheet" type="text/css"/>
+        <link href="css/responsive.css" rel="stylesheet" type="text/css"/>
+        <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700" rel="stylesheet">
+        <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+        <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+        <!--[if lt IE 9]>
+          <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+          <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+        <![endif]-->
+    </head>
+    <body style="background: #333333;">
+        <header>
+            <button type="button" class="btn btn-default pull-left showNav">
+                <span class="fa fa-bars"></span>
+            </button>
+            <a href="#"><figure class="logo"><img class="img-responsive" src="img/logo.jpg" alt=""/></figure></a>
+        </header>
+        <main>
+            <div class="container-fluid">
+                <section>
+                    <div class="row">
+                        <div class="toggle-nav">
+                            <article class="side-nav">
+                                <ul class="list-unstyled">
+                                    <li><a href="#"><span class="fa fa-user"></span><span>username</span></a><a href="#"><span class="fa fa-sign-out pull-right"></span></a></li>
+                                </ul>
+                                <ul class="list-unstyled">
+                                    <li class="active"><a href="#"><span class="fa fa-gift"></span><span>Narudžbine</span></a></li>
+                                    <li><a href="#"><span class="fa fa-gift"></span><span>Prodavnice</span></a></li>
+                                    <li><a href="#"><span class="fa fa-archive"></span><span>Boks paketi</span></a></li>
+                                    <li><a href="#"><span class="fa fa-address-card"></span><span>Članarina</span></a></li>
+                                    <li><a href="#"><span class="fa fa-certificate"></span><span>Bon</span></a></li>
+                                    <li><a href="#"><span class="fa fa-book"></span><span>Artikli</span></a></li>
+                                    <li><a href="#"><span class="fa fa-tag"></span><span>Kategorije</span></a></li>
+                                </ul>
+                                <ul class="list-unstyled">
+                                    <li><a href="#"><span class="fa fa-leaf"></span><span>Autori</span></a></li>
+                                    <li><a href="#"><span class="fa fa-user"></span><span>Administratori</span></a></li>
+                                    <li><a href="#"><span class="fa fa-users"></span><span>Korisnici</span></a></li>
+                                    <li><a href="#"><span class="fa fa-address-card"></span><span>Novčanik</span></a></li>
+                                    <li><a href="#"><span class="fa fa-comment-o"></span><span>Komentari</span></a></li>
+                                </ul>
+                                <ul class="cms">
+                                    <li><a href="#">CMS</a></li>
+                                    <li><a href="#">Slajder</a></li>
+                                    <li><a href="#">Sajt sekcije</a></li>
+                                    <li><a href="#">Selekcijski sadržaji</a></li>
+                                    <li><a href="#">Scroll tekst</a></li>
+                                    <li><a href="#">Info tekst</a></li>
+                                </ul>
+                                <ul class="list-unstyled">
+                                    <li><a href="#"><span class="fa fa-signal"></span><span>Autori</span></a></li>
+                                    <li><a href="#"><span class="fa fa-info-circle"></span><span>Administratori</span></a></li>
+                                </ul>
+                            </article>
+                        </div>
+                        <div class="col-sm-12 articles orders">
+                            <header>
+                                <div class="heaeder-top clearfix">
+                                    <h1>Narudžbine</h1>
+                                    <a class="pull-right" href="#"><span class="fa fa-search"></span></a>
+                                    <div class="search">
+                                        <form>
+                                            <input type="text" name="trazi" placeholder="Traži">
+                                            <select name="store">
+                                                <option value="">Status</option>
+                                                <option value=""></option>
+                                                <option value=""></option>
+                                                <option value=""></option>
+                                            </select>
+                                            <div class="date">
+                                                <p>od</p>
+                                                <input type="text" name="trazi" placeholder="01.012.2015.">
+                                                <p>do</p>
+                                                <input type="text" name="trazi" placeholder="10.02.2015.">
+                                            </div>
+                                            <button type="submit" class="btn-default text-uppercase">potvrdi</button>
+                                        </form>
+                                    </div>
+                                </div>
+
+                            </header>
+                            <article>
+                                <ul class="header text-uppercase list-unstyled">
+                                    <li class="num">broj/datum</li>
+                                    <li class="contact">podaci za kontakt i isporuku</li>
+                                    <li class="article-num">broj artikala</li>
+                                    <li class="price">cena(rsd)</li>
+                                    <li class="payment">nacin placanja</li>
+                                    <li class="status">status</li>
+                                </ul>
+                                <ul class="body">
+                                    <li class="num">
+                                        <h3>2</h3>
+                                        <p>01.02.2015.</p>
+                                        <p>19:14:01</p>
+                                    </li>
+                                    <li class="contact">
+                                        <h3>Miodrag Lapcevic <a href="#">miodraglapcevic@gmail.com</a></h3>
+                                        <div class="contact-card">
+                                            <p>
+                                                Miodrag Lapcevic<br>
+                                                Majke Kujundzica 27/6, ulaz:1 stan: 10 sprat: 1<br>
+                                                Beograd 11000
+                                            </p>
+                                        </div>
+                                    </li>
+                                    <li class="article-num">9</li>
+                                    <li class="price"></li>
+                                    <li class="payment"></li>
+                                    <li class="status"></li>
+                                </ul>
+                            </article>
+
+                            <a class="side-button">
+                                <span class="fa fa-chevron-right"></span>
+                                <span class="fa fa-chevron-right"></span>
+                                <span class="fa fa-chevron-right"></span>
+                                <span class="fa fa-chevron-right"></span>
+                            </a>
+                        </div>
+                    </div>
+                </section>
+            </div>
+
+        </main>
+
+
+
+
+
+
+        <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+        <!-- Include all compiled plugins (below), or include individual files as needed -->
+        <script src="js/bootstrap.min.js"></script>
+        <script src="js/main.js" type="text/javascript"></script>
+    </body>
+</html>

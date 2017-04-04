@@ -82,6 +82,12 @@
     main .articles .select-book:nth-of-type(3n + 1){
         margin-left: 0;
     }
+    .articles.orders .search .date{
+        display: inline-block;
+        margin-right: 15px;
+        margin-left: 20px;
+
+    }
 
 }
 
@@ -95,6 +101,19 @@
     }
     main .articles .select-book:nth-of-type(4n + 1){
         margin-left: 0;
+    }
+    .articles.orders .fa-search {
+        display: none;
+    }
+    .articles.orders .heaeder-top{
+        padding-bottom: 15px;
+    }
+    .articles.orders .heaeder-top .search{
+        float: right;
+        display: block;
+    }
+    .articles.orders .search .date{
+        margin-right: 25px;
     }
 
 }
