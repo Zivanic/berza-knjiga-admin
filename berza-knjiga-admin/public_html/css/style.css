@@ -429,20 +429,38 @@ main .order-info .header{
 main .order-info .desktop-version{
     display: none;
 }
+main .order-info .mobil-version{
+    color: #888888
+}
 
-.order-info .num .mobil-version{
+main .order-info h3{
+    margin-top: 0;
+}
+main .order-info .body div{
+    margin-top: 10px;
+}
+main .order-info .body .article-num,
+main .order-info .body .price,
+main .order-info .body .payment,
+main .order-info .body .status{
+    border-bottom: 1px solid #dddddd;
+    max-width: 300px;
+}
+.order-info .num {
     border-bottom: 1px solid #888888;
     margin-top: 10px;
     margin-left: -15px;
+    background-color: #888888;
+    display: inline-block;
 }
-.order-info .num .mobil-version p{
+.order-info .num  p{
     display: inline-block;
     padding: 0 10px;
-    background-color: #888888;
     color: #fff;
     margin-bottom: 0;
+
 }
-.order-info .mobil-version p u{
+.order-info p u{
     text-decoration: none;
     margin: 0 10px;
     font-weight: bold;
@@ -454,4 +472,14 @@ main .order-info .desktop-version{
 .order-info .contact a{
     color: #e8721a;
     font-size: 14px;
+    display: block;
+}
+.order-info .article-num p{
+    display: inline-block;
+}
+.order-info .price .mobil-version{
+    margin-right: 40px;
+}
+.order-info .price p{
+    display: inline-block;
 }

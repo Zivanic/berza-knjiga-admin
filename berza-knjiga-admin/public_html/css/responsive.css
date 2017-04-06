@@ -139,11 +139,30 @@
     main .order-info .status{
         width: 20%; 
     }
+    main .order-info .body .article-num,
+    main .order-info .body .price,
+    main .order-info .body .payment,
+    main .order-info .body .status{
+        border-bottom: none;
+    }
     main .order-info .mobil-version{
         display: none;
     }
     main .order-info .desktop-version{
         display: block;
+    }
+    .order-info .num {
+        border-bottom: none;
+        margin-top: 0px;
+        margin-left: 0;
+        background-color: transparent;
+        display: inline-block;
+    }
+    .order-info .num  p{
+        display: block;
+        padding: 0;
+        color: #000;
+        margin-bottom: 0;
     }
     .order-info .contact .contact-card{
         background-color: #ececec;
@@ -154,9 +173,27 @@
         margin: 0px;
     }
 
+    .order-info .contact a{
+        display: inline-block;
+    }
+    .order-info .price p{
+        display: block;
+        margin-bottom: 2px;
+    }
+    .order-info .price div{
+        text-align: right;
+    }
+    .order-info .price .desktop-version{
+        line-height: 5px;
+        font-weight: bolder;
+    }
+    .order-info p u{
+        text-decoration: none;
+        margin: 0;
+        font-weight: bold;
+    }
 
 }
-
 
 @media(min-width:1200px){
     main .articles .select-book {
