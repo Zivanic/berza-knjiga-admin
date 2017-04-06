@@ -127,7 +127,7 @@ main .side-nav li.active a
     display: none;
     border: 1px solid #333333;
     border-radius: 3px;
- }
+}
 .side-button .fa{
     color: #e8721a;
 }
@@ -419,4 +419,39 @@ main .articles .book p:first-of-type{
     display: inline-block;
     width: 40%;
     max-width: 120px;
+}
+main .order-info .header{
+    border-bottom: 1px solid #dddddd;
+    padding-bottom: 10px;
+    margin-top: 20px;
+    display: none;
+}
+main .order-info .desktop-version{
+    display: none;
+}
+
+.order-info .num .mobil-version{
+    border-bottom: 1px solid #888888;
+    margin-top: 10px;
+    margin-left: -15px;
+}
+.order-info .num .mobil-version p{
+    display: inline-block;
+    padding: 0 10px;
+    background-color: #888888;
+    color: #fff;
+    margin-bottom: 0;
+}
+.order-info .mobil-version p u{
+    text-decoration: none;
+    margin: 0 10px;
+    font-weight: bold;
+}
+.order-info .contact h3{
+    display: inline-block;
+    font-size: 16px;
+}
+.order-info .contact a{
+    color: #e8721a;
+    font-size: 14px;
 }
