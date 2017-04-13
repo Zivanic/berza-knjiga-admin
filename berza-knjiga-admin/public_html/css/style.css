@@ -426,7 +426,7 @@ main .order-info .header{
     margin-top: 20px;
     display: none;
 }
-main .order-info .desktop-version{
+main .desktop-version{
     display: none;
 }
 main .order-info .mobil-version{
@@ -482,4 +482,83 @@ main .order-info .body .status{
 }
 .order-info .price p{
     display: inline-block;
+}
+main .message{
+    margin-bottom: 20px;
+}
+main .message .fa{
+    vertical-align: bottom;
+    color: #e8721a;
+    font-size: 16px;
+}
+
+main .message input{
+    width: 100%;
+    max-width: 270px;
+    border-color: #888888;
+}
+main .message p{
+    color: #888888;
+    margin-bottom: 5px;
+    margin-top: 15px;
+}
+/****************ORDER WRAPPER*/
+main .order-wrapper{
+    padding: 15px;
+    background-color: #ececec;
+}
+main .order-wrapper .header{
+    display: none;
+}
+main .order-wrapper .header div p{
+    display: inline-block;
+    margin: 0;
+}
+main .order-wrapper .header div{
+    float: left;
+    display: inline-block;
+}
+.order-wrapper .body{
+    border-bottom: 3px solid #fff;
+    margin-top: 15px;
+}
+.order-wrapper .body .products {
+    display: inline-block;
+}
+.order-wrapper .body .title {
+    display: inline-block;
+    vertical-align: top;
+    font-weight: bold;
+}
+.order-wrapper .body .location{
+    display: block;
+    margin-bottom: 25px;
+    color:#888888;
+}
+.order-wrapper .body  u{
+    text-decoration: none;
+    display: inline-block;
+}
+main .order-wrapper .body p{
+    display: inline-block;
+    margin-left: 7px;
+}
+main .order-wrapper ul .id,
+main .order-wrapper ul .amount,
+main .order-wrapper ul .price,
+main .order-wrapper ul .size,
+main .order-wrapper ul .sum{
+    display: block;
+}
+.order-wrapper .body .sum p:last-of-type{
+    font-weight: bold;
+}
+.order-wrapper .body .mobil-version{
+    width: 100%;
+    max-width: 100px;
+    color: #888888;
+}
+.order-wrapper .body .status .mobil-version{
+    margin: 25px 7px;
+    
 }
