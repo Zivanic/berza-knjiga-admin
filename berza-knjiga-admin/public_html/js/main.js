@@ -18,3 +18,11 @@ $(".fa-cogs").click(function () {
     $(".nivelacija").toggleClass('showInline');
 
 });
+$('.toggle-oredr-list').click(function (){
+   $('.order-wrapper').toggleClass('display'); 
+});
+$('.toggle-oredr').click(function (){
+    var oredrList = $('.order-wrapper').html();
+    $('.order-wrapper-mobile').append(oredrList);
+    
+});

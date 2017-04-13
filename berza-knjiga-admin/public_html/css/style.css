@@ -8,6 +8,9 @@ body h1{
 .showInline{
     display: inline-block !important;
 }
+.display{
+    display: block !important;
+}
 /***********STILIZOVANJE HEDERA*/
 header{
     background-color: #333333;
@@ -415,10 +418,14 @@ main .articles .book p:first-of-type{
     display: inline-block;
     color: #888888;
 }
+
 .articles.orders .search .date input{
     display: inline-block;
     width: 40%;
     max-width: 120px;
+}
+.orders .shop{
+    margin-left: 40px;
 }
 main .order-info .header{
     border-bottom: 1px solid #dddddd;
@@ -452,7 +459,23 @@ main .order-info .body .status{
     margin-left: -15px;
     background-color: #888888;
     display: inline-block;
+    position: relative;
 }
+main .orders .toggle-oredr-list{
+    color: #e8721a;
+    border: 1px solid #8c8c8c;
+    box-shadow: 3px 3px 3px #8c8c8c;
+    position: absolute;
+    top: 3px;
+    left: -45px;
+    padding: 7px;
+    display: none;
+}
+
+main .orders .fa-chevron-down:hover{
+    cursor: pointer;
+}
+
 .order-info .num  p{
     display: inline-block;
     padding: 0 10px;
@@ -477,6 +500,19 @@ main .order-info .body .status{
 .order-info .article-num p{
     display: inline-block;
 }
+.order-info .article-num .toggle-oredr{
+    color: #e8721a;
+    border: 1px solid #dddddd;
+    padding: 5px;
+    box-shadow: 3px 3px 3px #dddddd;
+}
+.order-info .article-num span:hover{
+    cursor:pointer;
+}
+.order-info .article-num .fa{
+    margin-left: 5px;
+}
+
 .order-info .price .mobil-version{
     margin-right: 40px;
 }
@@ -506,6 +542,7 @@ main .message p{
 main .order-wrapper{
     padding: 15px;
     background-color: #ececec;
+    display: none;
 }
 main .order-wrapper .header{
     display: none;
@@ -530,6 +567,7 @@ main .order-wrapper .header div{
     vertical-align: top;
     font-weight: bold;
 }
+
 .order-wrapper .body .location{
     display: block;
     margin-bottom: 25px;
@@ -560,5 +598,6 @@ main .order-wrapper ul .sum{
 }
 .order-wrapper .body .status .mobil-version{
     margin: 25px 7px;
-    
+
 }
+

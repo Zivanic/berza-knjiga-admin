@@ -114,7 +114,14 @@
     .articles.orders .search .date{
         margin-right: 25px;
     }
+    main .orders .fa-chevron-down{
+        display: block;
+    }
+
     /*    /////////////ORDER LISTS*/
+    .order-info .article-num .toggle-oredr{
+        display: none;
+    }
     main .order-info .header{
         display: block;
     }
@@ -247,7 +254,9 @@
         border-bottom: 1px solid #ececec;
         padding: 7px;
     }
-
+    main .order-wrapper .body div{
+        float: left;
+    }
     .order-wrapper .body .title {
         vertical-align: middle;
     }
@@ -274,6 +283,7 @@
     main .order-wrapper ul .status{
         display: inline-block;
     }
+
 
 }
 @media(min-width:1200px){
