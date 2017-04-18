@@ -497,6 +497,9 @@ main .orders .fa-chevron-down:hover{
     font-size: 14px;
     display: block;
 }
+.order-info .article-num{
+    position: relative;
+}
 .order-info .article-num p{
     display: inline-block;
 }
@@ -505,6 +508,9 @@ main .orders .fa-chevron-down:hover{
     border: 1px solid #dddddd;
     padding: 5px;
     box-shadow: 3px 3px 3px #dddddd;
+    position: absolute;
+    right: 0;
+    bottom: 5px;
 }
 .order-info .article-num span:hover{
     cursor:pointer;
@@ -539,10 +545,18 @@ main .message p{
     margin-top: 15px;
 }
 /****************ORDER WRAPPER*/
+main .order-list{
+    display: none;
+}
 main .order-wrapper{
     padding: 15px;
     background-color: #ececec;
-    display: none;
+    display: block;
+    width: 100%;
+    max-width: 300px;
+    overflow: hidden;
+    height: 100vh;
+    overflow-y: auto;
 }
 main .order-wrapper .header{
     display: none;
@@ -601,3 +615,45 @@ main .order-wrapper ul .sum{
 
 }
 
+.order-wrapper-mobile .order-wrapper ul .price{
+    border: none;
+}
+.order-wrapper-mobile .order-wrapper ul .price p{
+    margin-right: 0;
+}
+/*//////////LOGIN PAGE*/
+main .login{
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100vh;
+    width: 100%;
+}
+main .login form{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-left: -90px;
+    margin-top: -115px;
+    color: #777777;
+
+}
+main .login form p{
+    margin-top: 15px;
+}
+main .login form .fa{
+    color: #e87218;
+    font-size: 30px;
+}
+main .login button{
+    display: block;
+    margin: 10px auto;
+    color: #fff;
+    background-color: #e87218;
+    border: 1px solid transparent;
+    width: 100%;
+    padding: 7px;
+}
+main .login button:hover{
+    color: #e87218;
+}

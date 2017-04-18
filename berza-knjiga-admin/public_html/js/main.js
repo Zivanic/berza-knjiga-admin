@@ -19,10 +19,24 @@ $(".fa-cogs").click(function () {
 
 });
 $('.toggle-oredr-list').click(function (){
-   $('.order-wrapper').toggleClass('display'); 
+   $('.order-list').toggleClass('display'); 
 });
 $('.toggle-oredr').click(function (){
-    var oredrList = $('.order-wrapper').html();
+    var oredrList = $('.order-list').html();
     $('.order-wrapper-mobile').append(oredrList);
     
+});
+$(window).on('load resize', function (e) {
+    windowWidth = $( window ).width();
+ if ( windowWidth < 992 ) {
+	$('.order-list').removeClass('display'); 
+         
+}
+
+if ( windowWidth > 992 ) {
+	
+}
+
+	
+
 });

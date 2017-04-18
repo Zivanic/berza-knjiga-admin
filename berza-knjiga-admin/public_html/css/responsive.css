@@ -219,6 +219,10 @@
     main .message a{
         margin-right: 15px;
     }
+    main .order-wrapper{
+        max-width: none;
+        height: 100%;
+    }
     main .order-wrapper .header{
         display: block;
         margin-bottom: 30px;
