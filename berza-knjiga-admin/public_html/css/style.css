@@ -19,6 +19,9 @@ header{
 header a{
     display: inline-block
 }
+header p{
+    display: inline-block;
+}
 header .logo{
     width: 80px;
 }
@@ -33,6 +36,19 @@ header .btn-default{
     background: transparent;
     border: transparent;
     transition: 0.5s ease;
+}
+header .logout{
+    color: #fff;
+    padding: 5px 25px;
+    border: 1px solid #888888;
+    margin-right: 60px;
+    transform: translateY(55%);
+    border-radius: 3px;
+    
+}
+header .logout:hover{
+    color: #e87218;
+    text-decoration: none;
 }
 header .fa-bars{
     color: #fff;
@@ -137,7 +153,7 @@ main .side-nav li.active a
 /***************ARTICLES*/
 main .articles{
     background: #fff;
-}
+    }
 main .articles header{
     background-color: #ececec;
     margin: 0 -15px;
@@ -655,5 +671,47 @@ main .login button{
     padding: 7px;
 }
 main .login button:hover{
-    color: #e87218;
+    color: #fff;
+    background-color:  #ab4d05;
+    border-color: transparent;
 }
+main .login form input:active,
+main .login form input:focus{
+    border-color: #8c8c8c;
+}
+/*//////////// USER PAGE STYLE*/
+main .user thead th{
+    font-weight: lighter;
+    color: #000;
+}
+main .user h1{ 
+    margin: 0;
+    font-weight: 400;
+ }
+ main .user p{
+     margin: 0;
+ }
+ main .user a{
+     color: #e8721a;
+ }
+ main .user a:hover{
+     color: #888888;
+ }
+ main .user a .fa{
+     font-size: 20px;
+     margin-left: 10px;
+     color: #9a9a9a;
+ }
+ main .user a .fa:hover{
+     color: #e87218;
+ }
+ main .user a .fa-power-off{
+     color: #59b200;
+ }
+ 
+ main .user tbody > tr > td{
+     vertical-align: middle;
+ }
+ main .user a .fa.disabled{
+     color: red;
+ }

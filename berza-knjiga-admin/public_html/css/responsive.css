@@ -33,6 +33,9 @@
         display: none;
         width: auto;
     }
+    main .articles{
+    height: 95vh;
+}
     main .articles .search input[type="text"]{
         display: inline-block;
         width: 120px;
@@ -302,5 +305,7 @@
         margin-left: 0;
     }
 
-
+    main .login form input{
+        width: 250px;
+    }
 }
