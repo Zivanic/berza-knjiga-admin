@@ -1,0 +1,362 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+        <title>Berza knjiga</title>
+
+        <!-- Bootstrap -->
+        <link href="css/bootstrap.min.css" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link href="css/hover-min.css" rel="stylesheet" type="text/css"/>
+        <link href="css/style.css" rel="stylesheet" type="text/css"/>
+        <link href="css/responsive.css" rel="stylesheet" type="text/css"/>
+        <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700" rel="stylesheet">
+        <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+        <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+        <!--[if lt IE 9]>
+          <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+          <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+        <![endif]-->
+    </head>
+    <body style="background: #333333;">
+        <header>
+            <button type="button" class="btn btn-default pull-left showNav">
+                <span class="fa fa-bars"></span>
+            </button>
+            <a href="#"><figure class="logo"><img class="img-responsive" src="img/logo.jpg" alt=""/></figure></a>
+            <a href="#" class="text-uppercase pull-right logout">ODJAVA</a>
+        </header>
+        <main>
+            <div class="container-fluid">
+                <section>
+                    <div class="row">
+                        <div class="toggle-nav">
+                            <article class="side-nav">
+                                <ul class="list-unstyled">
+                                    <li><a href="#"><span class="fa fa-user"></span><span>username</span></a><a href="#"><span class="fa fa-sign-out pull-right"></span></a></li>
+                                </ul>
+                                <ul class="list-unstyled">
+                                    <li class="active"><a href="#"><span class="fa fa-gift"></span><span>Narudžbine</span></a></li>
+                                    <li><a href="#"><span class="fa fa-shopping-cart"></span><span>Prodavnice</span></a></li>
+                                    <li><a href="#"><span class="fa fa-archive"></span><span>Boks paketi</span></a></li>
+                                    <li><a href="#"><span class="fa fa-address-card"></span><span>Članarina</span></a></li>
+                                    <li><a href="#"><span class="fa fa-certificate"></span><span>Bon</span></a></li>
+                                    <li><a href="#"><span class="fa fa-book"></span><span>Artikli</span></a></li>
+                                    <li><a href="#"><span class="fa fa-tag"></span><span>Kategorije</span></a></li>
+                                </ul>
+                                <ul class="list-unstyled">
+                                    <li><a href="#"><span class="fa fa-leaf"></span><span>Autori</span></a></li>
+                                    <li><a href="#"><span class="fa fa-user"></span><span>Administratori</span></a></li>
+                                    <li><a href="#"><span class="fa fa-users"></span><span>Korisnici</span></a></li>
+                                    <li><a href="#"><span class="fa fa-address-card"></span><span>Novčanik</span></a></li>
+                                    <li><a href="#"><span class="fa fa-comment-o"></span><span>Komentari</span></a></li>
+                                </ul>
+                                <ul class="cms">
+                                    <li><a href="#">CMS</a></li>
+                                    <li><a href="#">Slajder</a></li>
+                                    <li><a href="#">Sajt sekcije</a></li>
+                                    <li><a href="#">Selekcijski sadržaji</a></li>
+                                    <li><a href="#">Scroll tekst</a></li>
+                                    <li><a href="#">Info tekst</a></li>
+                                </ul>
+                                <ul class="list-unstyled">
+                                    <li><a href="#"><span class="fa fa-signal"></span><span>Autori</span></a></li>
+                                    <li><a href="#"><span class="fa fa-info-circle"></span><span>Administratori</span></a></li>
+                                </ul>
+                            </article>
+                        </div>
+                        <div class="col-sm-12 articles">
+                            <header class="items">
+                                <div class="heaeder-top clearfix">
+                                    <h1>Novi artikal</h1>
+                                    <a href="#" class="help-button pull-right"><span class="fa fa-question-circle "></span></a>
+                                </div>
+
+                            </header>
+                            <div class="row selection"> 
+                                <form class="form clearfix">
+                                    <div class="form-inline">
+                                        <input class="form-control" type="text" name="title" placeholder="Naziv knjige" required="">
+                                        <input class="form-control" type="text" name="price" placeholder="Traži" required="">
+                                        <input class="form-control" type="text" name="sale" placeholder="Traži" required="">
+                                        <select class="form-control" required="" >
+                                            <option>RSD</option>
+                                            <option></option>
+                                            <option></option>
+                                            <option></option>
+                                            <option></option>
+                                        </select>
+                                    </div>
+                                    <div class="col-sm-3 clearfix category">
+                                        <h2>Katekorizacija</h2>
+                                        <div class="form-group">
+                                            <select class="form-control" required="">
+                                                <option>Prodavnica</option>
+                                                <option>2</option>
+                                                <option>3</option>
+                                                <option>4</option>
+                                                <option>5</option>
+                                            </select>
+                                            <span class="fa fa-question-circle help"></span>
+                                            <div class="help-cloud">
+                                                <h4>Upisati prodavnicu</h4>
+                                                <p></p>
+                                            </div>
+                                        </div>
+                                        <div class="form-group">
+                                            <select class="form-control" required="">
+                                                <option>Kategorije</option>
+                                                <option>2</option>
+                                                <option>3</option>
+                                                <option>4</option>
+                                                <option>5</option>
+                                            </select>
+                                            <span class="fa fa-question-circle help"></span>
+                                            <div class="help-cloud">
+                                                <h4>Upisati materijal poveza</h4>
+                                                <p>spirala, klemovano ...</p>
+                                            </div>
+                                        </div>
+                                        <div class=" extra-category">
+                                            <label class="control-label text-uppercase">dodatna kategorija</label>
+                                                <div class="form-group">
+                                                <select multiple class="form-control" size="5">
+                                                    <option>domace</option>
+                                                    <option>strane</option>
+                                                    <option>best sellers</option>
+                                                    <option>domaci autori</option>
+                                                    <option>strani autori</option>
+                                                    <option>-----</option>
+                                                    <option>-----</option>
+                                                    <option>-----</option>
+                                                    <option>-----</option>
+                                                    <option>-----</option>
+                                                </select>
+                                            </div>
+                                        </div>
+                                            <div class="form-group">
+                                                <select class="form-control" required="">
+                                                    <option>Dostava</option>
+                                                    <option>2</option>
+                                                    <option>3</option>
+                                                    <option>4</option>
+                                                    <option>5</option>
+                                                </select> 
+                                                <span class="fa fa-question-circle help"></span>
+                                                <div class="help-cloud">
+                                                    <h4>Upisati nacin dostave</h4>
+                                                    <p>posta, licno ...</p>
+                                                </div>
+                                            </div>
+                                            <div class="form-group">
+                                                <input class="form-control" type="text" name="weith" placeholder="Težina" required="">
+                                                <span class="fa fa-question-circle help"></span>
+                                                <div class="help-cloud">
+                                                    <h4>Upisati materijal poveza</h4>
+                                                    <p>spirala, klemovano ...</p>
+                                                </div>
+                                            </div>
+                                            <div class="form-group">
+                                                <input class="form-control" type="text" name="id" placeholder="Šifra" required="">
+                                            </div>
+                                            <div class="form-group">
+                                                <input class="form-control" type="text" name="status" placeholder="Lager" required="">
+                                            </div>
+                                            <div class="form-group">
+                                                <select class="form-control" required="">
+                                                    <option>Status</option>
+                                                    <option>2</option>
+                                                    <option>3</option>
+                                                    <option>4</option>
+                                                    <option>5</option>
+                                                </select>
+                                                <span class="fa fa-question-circle help"></span>
+                                                <div class="help-cloud">
+                                                    <h4>Upisati materijal poveza</h4>
+                                                    <p>spirala, klemovano ...</p>
+                                                </div>
+                                            </div>
+                                            <input type="checkbox">
+                                            promo
+                                        </div>
+                                        <div class="col-sm-3 clearfix spec">
+                                            <h2>Spesifikacija</h2>
+                                            <div class="form-group">
+                                                <select class="form-control" required="">
+                                                    <option>Autor</option>
+                                                    <option>2</option>
+                                                    <option>3</option>
+                                                    <option>4</option>
+                                                    <option>5</option>
+                                                </select>
+                                            </div>
+                                            <div class="form-group">
+                                                <select class="form-control" required="">
+                                                    <option>Izdavač</option>
+                                                    <option>2</option>
+                                                    <option>3</option>
+                                                    <option>4</option>
+                                                    <option>5</option>
+                                                </select>
+                                                <span class="fa fa-question-circle help"></span>
+                                                <div class="help-cloud">
+                                                    <h4>Upisati materijal poveza</h4>
+                                                    <p>spirala, klemovano ...</p>
+                                                </div>
+                                            </div>
+                                            <div class="form-group">
+                                                <input class="form-control" type="text" name="format" placeholder="Format">
+                                            </div>
+                                            <div class="form-group">
+                                                <select class="form-control" required="">
+                                                    <option>Pismo-latinica</option>
+                                                    <option>2</option>
+                                                    <option>3</option>
+                                                    <option>4</option>
+                                                    <option>5</option>
+                                                </select>
+                                            </div>
+                                            <div class="form-group">
+                                                <input class="form-control" type="text" name="pages" placeholder="Broj strana" required="">
+                                            </div>
+                                            <div class="form-group">
+                                                <input class="form-control" type="text" name="title" placeholder="Povez">
+                                                <span class="fa fa-question-circle help"></span>
+                                                <div class="help-cloud">
+                                                    <h4>Upisati materijal poveza</h4>
+                                                    <p>spirala, klemovano ...</p>
+                                                </div>
+                                            </div>
+                                            <div class="form-group">
+                                                <input class="form-control" type="text" name="year" placeholder="Godina izdanja">
+                                            </div>
+                                            <div class="form-group">
+                                                <input class="form-control" type="text" name="condition" placeholder="Kvalitet/stanje">
+                                            </div>
+                                            <div class="form-group">
+                                                <input class="form-control" type="text" name="video" placeholder="Video">
+                                            </div>
+                                            <div class="form-group">
+                                                <input type="text" class="form-control" placeholder="PDF odlomak">
+                                            </div>
+                                            <div class="form-group">
+                                                <label class="input-group-btn pdf">
+                                                    <span class="btn btn-primary">
+                                                        FILE <input type="file" style="display: none;" multiple>
+                                                    </span>
+                                                </label>
+                                            </div>
+                                            <div class="form-group">
+                                                <div class="radio">
+                                                    <label>
+                                                        <input type="radio" name="condition">
+                                                        polovna knjiga
+                                                    </label>
+                                                </div>
+                                                <div class="radio">
+                                                    <label>
+                                                        <input type="radio" name="condition">
+                                                        nova knjiga
+                                                    </label>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-sm-6 clearfix">
+                                            <div class="description">
+                                                <h2>Opis</h2>
+                                                <textarea class="form-control" rows="5"></textarea>
+                                            </div>
+                                            <div class="row">
+                                                <div class="col-sm-6 promo">
+                                                    <h2>Promocija</h2>
+                                                    <div class="form-group">
+                                                        <select class="form-control">
+                                                            <option>Dodati proizvod u box</option>
+                                                            <option>2</option>
+                                                            <option>3</option>
+                                                            <option>4</option>
+                                                            <option>5</option>
+                                                        </select>
+                                                        <span class="fa fa-question-circle help"></span>
+                                                        <div class="help-cloud">
+                                                            <h4>Upisati materijal poveza</h4>
+                                                            <p>spirala, klemovano ...</p>
+                                                        </div>
+                                                    </div>
+                                                    <div class="form-group">
+                                                        <select class="form-control">
+                                                            <option>Izdvoji ovaj proizvod</option>
+                                                            <option>2</option>
+                                                            <option>3</option>
+                                                            <option>4</option>
+                                                            <option>5</option>
+                                                        </select>
+                                                        <span class="fa fa-question-circle help"></span>
+                                                        <div class="help-cloud">
+                                                            <h4>Upisati materijal poveza</h4>
+                                                            <p>spirala, klemovano ...</p>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="col-sm-6 promo">
+                                                    <h2>Pripadajuća zona</h2>
+                                                    <div class="form-group">
+                                                        <div class="radio">
+                                                            <label>
+                                                                <input type="radio" name="age">
+                                                                za mlade
+                                                            </label>
+                                                        </div>
+                                                        <div class="radio">
+                                                            <label>
+                                                                <input type="radio" name="age">
+                                                                za poklon
+                                                            </label>
+                                                        </div>
+                                                    </div>
+                                                    <div class="form-group">
+                                                        <select class="form-control">
+                                                            <option>Stavka kojoj odgovara</option>
+                                                            <option>2</option>
+                                                            <option>3</option>
+                                                            <option>4</option>
+                                                            <option>5</option>
+                                                        </select>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-sm-12 bottom-form">
+                                            <span class="tag"><u>*</u>OBAVEZNO</span>
+                                            <button type="submit" class="btn-default pull-right">UNESI ARTIKAL</button>
+                                        </div>
+                                </form>
+                            </div>
+                            <a class="side-button">
+                                <span class="fa fa-chevron-right"></span>
+                                <span class="fa fa-chevron-right"></span>
+                                <span class="fa fa-chevron-right"></span>
+                                <span class="fa fa-chevron-right"></span>
+                            </a>
+                        </div>
+                    </div>
+                </section>
+            </div>
+
+        </main>
+
+
+
+
+
+
+        <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+        <!-- Include all compiled plugins (below), or include individual files as needed -->
+        <script src="js/bootstrap.min.js"></script>
+        <script src="js/main.js" type="text/javascript"></script>
+    </body>
+</html>

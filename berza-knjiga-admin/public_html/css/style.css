@@ -44,7 +44,7 @@ header .logout{
     margin-right: 60px;
     transform: translateY(55%);
     border-radius: 3px;
-    
+    display: none;
 }
 header .logout:hover{
     color: #e87218;
@@ -142,10 +142,11 @@ main .side-nav li.active a
     background: #333333;
     position: fixed;
     top: 300px;
-    left: 0;
     display: none;
     border: 1px solid #333333;
-    border-radius: 3px;
+    border-top-right-radius: 3px;
+    border-bottom-right-radius: 3px;
+    margin-left: -15px;
 }
 .side-button .fa{
     color: #e8721a;
@@ -153,7 +154,7 @@ main .side-nav li.active a
 /***************ARTICLES*/
 main .articles{
     background: #fff;
-    }
+}
 main .articles header{
     background-color: #ececec;
     margin: 0 -15px;
@@ -197,8 +198,10 @@ main .articles .search .form-group p{
 
 }
 main .articles .search input[type="checkbox"] {
-    margin: 0px;
+    margin: 0 auto;
+    display: block;
 }
+
 main .articles .btn-default{
     position: static;
     color: #fff;
@@ -213,7 +216,6 @@ main .articles .btn-default:hover{
 }
 main .heaeder-top{
     border-bottom: 1px solid #dddddd;
-    padding-bottom: 30px;
 }
 
 main .search select{
@@ -224,12 +226,14 @@ main .search select{
     appearance: none; 
     background-image: url('down.jpg'); 
     background-repeat: no-repeat;
-    background-position-x: 75px;
+    background-position-x: 100%;
     margin: 5px 5px;
-    width: 90px;
     box-shadow: 2px 2px 2px 1px rgb(221, 221, 221);
     padding: 3px;
+    padding-right: 15px;
+    background-position-y: 40%;
 }
+
 main .articles .search input[type="text"]{
     border-color: transparent;
     border-radius: 3px;
@@ -275,8 +279,9 @@ main .articles .new-article p{
 main .articles .new-article input[type="checkbox"]{
     margin-left: 15px;
     margin-right: 5px;
-    vertical-align: text-top;
+    vertical-align: text-bottom;
 }
+
 main .articles .new-article input[type="text"]{
     border-color: transparent;
     border-radius: 3px;
@@ -686,32 +691,209 @@ main .user thead th{
 }
 main .user h1{ 
     margin: 0;
-    font-weight: 400;
- }
- main .user p{
-     margin: 0;
- }
- main .user a{
-     color: #e8721a;
- }
- main .user a:hover{
-     color: #888888;
- }
- main .user a .fa{
-     font-size: 20px;
-     margin-left: 10px;
-     color: #9a9a9a;
- }
- main .user a .fa:hover{
-     color: #e87218;
- }
- main .user a .fa-power-off{
-     color: #59b200;
- }
- 
- main .user tbody > tr > td{
-     vertical-align: middle;
- }
- main .user a .fa.disabled{
-     color: red;
- }
+    font-weight: bold;
+    font-size: 14px;
+}
+main .user p{
+    margin: 0;
+    font-size: 11px;
+}
+main .user a{
+    color: #e8721a;
+}
+main .user a:hover{
+    color: #888888;
+}
+main .user a .fa{
+    font-size: 20px;
+    margin-left: 10px;
+    color: #9a9a9a;
+}
+main .user a .fa:hover{
+    color: #555555;
+}
+main .user a .fa-power-off{
+    color: #59b200;
+}
+
+main .user tbody > tr > td{
+    vertical-align: middle;
+}
+main .user a .fa.disabled{
+    color: red;
+}
+main .user a .fa-unlock-alt{
+    color: #59b200;
+}
+
+/* -------------------Artikli ----------*/
+main .articles .items{
+    background-color: #3eadc1;
+}
+main .articles .items .fa{
+    color: #fff;
+    font-size: 21px;
+}
+main .articles .help-button{
+    margin-top: 10px;
+}
+main .articles .help-button.active .fa{
+    color: #e8721a;
+}
+main .articles .items h1{
+    color: #fff;
+}
+main .articles .items .heaeder-top{
+    border-bottom: none;
+}
+.articles .form{
+    padding: 0 20px;
+}
+.articles .form h2{
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+.articles .form .form-inline{
+    margin-top: 30px;
+    padding-bottom: 15px;
+    border-bottom: 1px solid #ececec;
+    margin-bottom: 15px;
+    margin-left: 15px;
+}
+.articles .form .category,
+.articles .form .spec{
+    border-right:  1px solid #ececec;
+    margin-bottom: 20px;
+    padding-right: 30px;
+}
+.articles .form select{
+    border-color: #d2d2d2;
+    border-radius: 3px;
+    -webkit-appearance: none; 
+    -moz-appearance: none;
+    appearance: none; 
+    background-image: url('down.jpg'); 
+    background-repeat: no-repeat;
+    background-position-x: 100%;
+    box-shadow: 2px 2px 2px 1px rgb(221, 221, 221);
+    padding: 3px;
+    padding-right: 15px;
+    margin-bottom: 13px;
+    background-position-y: 40%;
+}
+
+.articles .form input[type=text]{
+    border-color: #d2d2d2;
+    border-radius: 3px;
+    -webkit-appearance: none; 
+    -moz-appearance: none;
+    box-shadow: 2px 2px 2px 1px rgb(221, 221, 221);
+    padding: 3px;
+    padding-right: 15px;
+    margin-bottom: 13px;
+    color: #000;
+}
+.articles .form input[type=text]:focus{
+    border-color: #e8721a;
+}
+.articles .form .pdf{
+    transform: translateY(-48px);
+    position: absolute;
+    right: 0;
+    margin-right: 50px;
+
+}
+
+main .articles .form .btn-primary{
+    background-color: #eeeeee;
+    border: none;
+    color: #777777;
+}
+main .articles .form label{
+    font-size: 14px;
+    font-weight: normal;
+}
+
+.articles .form input[type=checkbox] {
+    vertical-align: text-bottom;
+
+}
+.articles .form .radio{
+    display: inline-block;
+    margin-right: 15px;
+}
+.articles .form .extra-category{
+    margin-left: 20px;
+}
+.articles .form .description{
+    border-bottom:  1px solid #ececec;
+    padding-bottom: 20px;
+    margin-bottom: 20px;
+}
+.articles .form .promo{
+    border-right: 1px solid #ececec;
+    padding-right: 30px;
+}
+.articles .form .bottom-form{
+    border-top:  1px solid #ececec;
+    margin-bottom: 25px;
+}
+.articles .form .bottom-form .tag{
+    background-color: #ececec;
+    padding: 3px;
+}
+.articles .form .bottom-form .tag u{
+    color: #3eadc1;
+    vertical-align: top;
+    margin-right: 5px;
+    font-size: 21px;
+    text-decoration: none;
+}
+.articles .form .bottom-form button{
+    margin-top: 15px;
+}
+.selection .form-group{
+    position: relative;
+}
+.selection .required{
+    position: absolute;
+    right: -10px;
+    top: 0;
+    color: #3eadc1;
+    font-size: 21px;
+}
+
+.form-inline .required{
+    right: 3px;
+}
+.fa.help{
+    position: absolute;
+    right: -25px;
+    color: #e87218;
+    top: 10px;
+    font-size: 14px;
+    cursor: pointer;
+    display: none;
+}
+.help-cloud{
+    display: none;
+    background-color: #000;
+    color: #fff;
+    position: absolute;
+    z-index: 1000;
+    padding: 0 10px;
+    border-radius: 3px;
+    bottom: 25px;
+    right: -15px;
+}
+
+.help-cloud h4{
+    font-size: 14px;
+    font-weight: bold;
+}
+.help-cloud p{
+    font-weight: lighter;
+    font-size: 12px;
+
+}

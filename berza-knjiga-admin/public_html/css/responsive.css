@@ -13,6 +13,12 @@
 }
 
 @media(min-width:768px){
+    header .logout{
+        display: block;
+    }
+    main .articles .items a{
+        margin-right: 60px;
+    }
     header{
         text-align: left;
     }
@@ -33,9 +39,7 @@
         display: none;
         width: auto;
     }
-    main .articles{
-    height: 95vh;
-}
+
     main .articles .search input[type="text"]{
         display: inline-block;
         width: 120px;
@@ -91,9 +95,17 @@
         margin-left: 20px;
 
     }
+    .form-inline .required{
+        position: relative;
+        margin-left: 5px;
+    }
+    .help-cloud{
+        right: -100px;
+    }
 }
 
 @media(min-width:992px){
+
     main .articles .select-book {
         width: 23.5%;
         margin-left: 2%;
@@ -307,5 +319,11 @@
 
     main .login form input{
         width: 250px;
+    }
+    main .user h1{ 
+        font-size: 19px;
+    }
+    main .user p{
+        font-size: 14px;
     }
 }
